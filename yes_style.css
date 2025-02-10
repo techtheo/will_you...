@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg, #ff4e50, #fc913a, #ff6b81, #ff758c, #e63946);
+    background-size: 300% 300%;
+    animation: romanticGlow 8s linear infinite alternate;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    color: white;
+  }
+  
+  @keyframes romanticGlow {
+    0% {
+        background-position: 0% 50%;
+        /* filter: blur(2px); */
+    }
+    50% {
+        background-position: 100% 50%;
+        /* filter: blur(4px); */
+    }
+    100% {
+        background-position: 0% 50%;
+        /* filter: blur(2px); */
+    }
+  }
+  
+
+.container {
+    text-align: center;
+}
+
+.header_text {
+    font-size: 3em;
+    color: #d32f2f;
+}
+
+.gif_container img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
